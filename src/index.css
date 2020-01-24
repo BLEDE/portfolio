@@ -1,13 +1,140 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #e6ecf0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+    margin-bottom: .25rem;
+}
+
+.navbar a {
+    font-weight: bold;
+    color: black;
+}
+
+.navbar a:hover {
+    color: navy;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul.navbar.navbar-nav li {
+    margin: 0 0.5rem;
+}
+
+.onboarding > .navbar {
+    background-color: rgba(255,255,255,.6);
+    background-size: 100% 100%;
+}
+
+/*Main Page*/
+/*  If background image
+    put z-index:-1 so that 
+    navbar can be on top
+    background-position: center center
+    background-size: cover
+    
+    text-shadow: 0 0 8px #66575f
+
+.home-hero {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+*/
+
+.header-bg {
+    background-image: url("./images/headerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+    overflow: hidden;
+    min-height: 465px;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+}
+
+.header-bg > .header-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+.header-bg > .header-info h1{
+    margin: 2.25rem;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.header-bg > .header-info h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.about-wrapper {
+    background: #f2f2f2;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-content {
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    max-height: 800px;
+}
+
+.about-article h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 2rem 0 1rem;
+    text-transform: uppercase;
+}
+
+.about-article > .about-img {
+    height: 200px;
+    width: 250px;
+    border-radius: 30%;
+}
+
+.about-article > .link-icons {
+    padding-top: 1rem;
+    font-size: 30px;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.about-article > .about-article a:hover i {
+    cursor: pointer;
+}
+.about-article a{
+    padding: 0 1rem;
+}
+
+.resume-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 1rem;
 }
