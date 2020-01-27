@@ -13,7 +13,7 @@ export default class Header extends Component {
     }
     parallaxShift = () => {
         this.setState({
-            offset: window.pageYOffset / 3
+            offset: window.pageYOffset / 2
         });
     };
     render() {

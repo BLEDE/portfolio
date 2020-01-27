@@ -93,19 +93,18 @@ ul.navbar.navbar-nav li {
 
 .about-content {
     background: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     font-family: "Montserrat", sans-serif;
     color: #333;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
     max-height: 800px;
+    text-align: center;
 }
 
 .about-article h2 {
-    text-align: center;
     font-size: 40px;
     font-weight: 100;
     margin: 2rem 0 1rem;
@@ -121,20 +120,64 @@ ul.navbar.navbar-nav li {
 .about-article > .link-icons {
     padding-top: 1rem;
     font-size: 30px;
-    padding-bottom: 0.5rem;
-    text-align: center;
+    color: #333;
+    padding-bottom: 1rem;
 }
 
 .about-article > .about-article a:hover i {
     cursor: pointer;
+    color: grey;
 }
-.about-article a{
-    padding: 0 1rem;
+.about-article a {
+    text-decoration: none;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    padding: 1rem;
 }
 
 .resume-link {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.about-content .description {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #333;
+    margin: 3rem 0;
+    max-width: 1000px;
+    text-align: center;
+}
+
+    .description a:hover {
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+.about-content article {
+    padding: 2rem;
+}
+
+.about-content article div {
+    margin: auto;
+}
+
+    .about-content article p {
+        width: 400px;
+        margin: auto;
+    }
+
+.project {
+    margin: 0 1rem;
+    padding-bottom: 2rem;
+}
+.project img {
+    width: 250px;
+    height: 180px;
+    padding: 0.2rem;
+    border: 1px solid rgba(0,0,0,0.3);
 }
