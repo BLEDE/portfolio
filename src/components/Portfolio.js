@@ -16,7 +16,7 @@ export default class Portfolio extends Component {
 
     render() {
         return (
-            <section>
+            <section className="portfolio-sec">
                 <h1 className="portfolio title">Portfolio</h1>
                 <div className="projects-wrapper">{this.myProjects()}</div>
             </section>
