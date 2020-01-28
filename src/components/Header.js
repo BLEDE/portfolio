@@ -27,7 +27,7 @@ export default class Header extends Component {
                     style={{ bottom: this.state.offset }}
                 >
                     <h1>Brian Lederman</h1>
-                    <h3>Front End Developer</h3>
+                    <h4>Front End Developer</h4>
                 </section>
             </header >
         );

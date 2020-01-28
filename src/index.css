@@ -56,7 +56,7 @@ ul.navbar.navbar-nav li {
     background-size: 100vw;
     position: relative;
     overflow: hidden;
-    min-height: 465px;
+    min-height: 455px;
     display: flex;
     align-items: center;
     font-family: "Montserrat", sans-serif;
@@ -72,6 +72,7 @@ ul.navbar.navbar-nav li {
     margin: auto;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
+    min-height: 175px;
 }
 
 .header-bg > .header-info h1{
@@ -84,6 +85,31 @@ ul.navbar.navbar-nav li {
     font-size: 30px;
     text-transform: uppercase;
 }
+
+@media (max-width: 750px) {
+    .header-bg {
+        min-height: 300px;
+    }
+    .header-bg .header-info {
+        height: 150px;
+        width: 300px;
+        margin: auto;
+        padding: 0 1rem;
+        max-width: 800px;
+        min-height: 100px;
+        text-align: center;
+    }
+    .header-bg .header-info h1 {
+        margin: 1rem;
+        font-size: 30px;
+        font-weight: 200;
+    }
+    .header-bg .header-info h4 {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
+
 /*ABOUT*/
 .about-wrapper {
     background: #f2f2f2;
@@ -100,7 +126,7 @@ ul.navbar.navbar-nav li {
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-    max-height: 800px;
+    max-height: 900px;
     text-align: center;
 }
 
@@ -128,6 +154,7 @@ ul.navbar.navbar-nav li {
     cursor: pointer;
     color: grey;
 }
+
 .about-article a {
     text-decoration: none;
     color: #333;
@@ -153,10 +180,10 @@ ul.navbar.navbar-nav li {
     text-align: center;
 }
 
-    .description a:hover {
-        cursor: pointer;
-        font-weight: 600;
-    }
+.description a:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
 
 .about-content article {
     padding: 2rem;
@@ -166,10 +193,35 @@ ul.navbar.navbar-nav li {
     margin: auto;
 }
 
-    .about-content article p {
-        width: 400px;
-        margin: auto;
+.about-content article p {
+    width: 400px;
+    margin: auto;
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        display: block;
     }
+    .about-content .description {
+        border-left: 0;
+        border-top: 1px solid #333;
+        margin: 0 3rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .about-content .description {
+        margin: 0 1rem;
+        padding-top: 0rem;
+        border-top: 0;
+    }
+    .about-content .about-article {
+        padding: 0 0;
+    }
+    .about-content img {
+        margin: 0.5rem 0.5rem;
+    }
+}
 
 /*PORTFOLIO*/
 .project {

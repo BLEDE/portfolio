@@ -21,7 +21,7 @@ export const projects = [
         title: "Portfolio Site",
         screenshot: portfolioimg,
         deploy: "",
-        details: "This site was also made using what I have learned through front end development!",
-        stack: "React, React Redux, javascript, HTML, CSS, Node"
+        details: "This site is also created through Javascript and React, with similar strategies to the previous projects!",
+        stack: "React, React Redux, Javascript, HTML, CSS, Node"
     }
 ];
