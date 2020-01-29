@@ -22,6 +22,6 @@ export const projects = [
         screenshot: portfolioimg,
         deploy: "",
         details: "This site is also created through Javascript and React, with similar strategies to the previous projects!",
-        stack: "React, React Redux, Javascript, HTML, CSS, Node"
+        stack: "AWS, React, React Redux, Javascript, HTML, CSS, Node"
     }
 ];
