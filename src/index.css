@@ -86,9 +86,23 @@ ul.navbar.navbar-nav li {
     text-transform: uppercase;
 }
 
+@media (min-width: 2000px) {
+    .header-bg .header-info {
+        padding-top: 3rem;
+    }
+}
+
+@media (min-width: 3500px) {
+    .header-bg .header-info {
+        padding-top: 5rem;
+        height: 15vh;
+    }
+}
+
 @media (max-width: 750px) {
     .header-bg {
         min-height: 300px;
+        background-size: 150vw;
     }
     .header-bg .header-info {
         height: 150px;
@@ -211,9 +225,14 @@ ul.navbar.navbar-nav li {
 
 @media (max-width: 580px) {
     .about-content .description {
-        margin: 0 1rem;
+        margin: 0 0.5rem;
         padding-top: 0rem;
         border-top: 0;
+        overflow: hidden;
+        white-space: initial;
+    }
+    .about-content article p {
+        width: auto;
     }
     .about-content .about-article {
         padding: 0 0;
